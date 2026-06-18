@@ -3,4 +3,11 @@
   <groupId>food_delivery</groupId>
   <artifactId>food_delivery2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<dependency>
+    	<groupId>com.arangodb</groupId>
+    	<artifactId>arangodb-spring-data</artifactId>
+    	<version>4.5.0</version>
+	</dependency>
+  </dependencies>
 </project>
