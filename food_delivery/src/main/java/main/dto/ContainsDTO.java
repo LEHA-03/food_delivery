@@ -7,7 +7,7 @@ public class ContainsDTO {
 
 	    private OrderDTO order;
 
-	    private OffersDTO item;
+	    private OfferDTO item;
 
 	    private int quantity;
 
@@ -16,7 +16,7 @@ public class ContainsDTO {
 			// TODO Auto-generated constructor stub
 		}
 
-		public ContainsDTO(String id, OrderDTO order, OffersDTO item, int quantity) {
+		public ContainsDTO(String id, OrderDTO order, OfferDTO item, int quantity) {
 			super();
 			this.id = id;
 			this.order = order;
@@ -40,11 +40,11 @@ public class ContainsDTO {
 			this.order = order;
 		}
 
-		public OffersDTO getItem() {
+		public OfferDTO getItem() {
 			return item;
 		}
 
-		public void setItem(OffersDTO item) {
+		public void setItem(OfferDTO item) {
 			this.item = item;
 		}
 

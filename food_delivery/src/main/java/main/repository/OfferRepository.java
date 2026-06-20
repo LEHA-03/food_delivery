@@ -4,9 +4,9 @@ import org.springframework.stereotype.Repository;
 
 import com.arangodb.springframework.repository.ArangoRepository;
 
-import main.model.Offers;
+import main.model.Offer;
 
 @Repository
-public interface OffersRepository extends ArangoRepository<Offers, String> {
+public interface OfferRepository extends ArangoRepository<Offer, String> {
 
 }

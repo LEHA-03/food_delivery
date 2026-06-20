@@ -2,7 +2,7 @@ package main.dto;
 
 
 
-public class OffersDTO {
+public class OfferDTO {
 
 	
 
@@ -14,12 +14,12 @@ public class OffersDTO {
 
     private int price;
 
-	public OffersDTO() {
+	public OfferDTO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public OffersDTO(String id, RestaurantDTO restaurant, MenuItemDTO item, int price) {
+	public OfferDTO(String id, RestaurantDTO restaurant, MenuItemDTO item, int price) {
 		super();
 		this.id = id;
 		this.restaurant = restaurant;

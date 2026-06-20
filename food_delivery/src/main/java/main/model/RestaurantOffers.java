@@ -1,12 +1,12 @@
 package main.model;
 
-import com.arangodb.serde.jackson.From;
 import com.arangodb.serde.jackson.Id;
-import com.arangodb.serde.jackson.To;
 import com.arangodb.springframework.annotation.Edge;
+import com.arangodb.springframework.annotation.From;
+import com.arangodb.springframework.annotation.To;
 
-@Edge("offers")
-public class Offers {
+@Edge("restaurantOffers")
+public class RestaurantOffers {
 
     @Id
     private String id;
@@ -15,21 +15,18 @@ public class Offers {
     private Restaurant restaurant;
 
     @To
-    private MenuItem item;
+    private Offer offer;
 
-    private int price;
-
-	public Offers() {
+    public RestaurantOffers() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Offers(String id, Restaurant restaurant, MenuItem item, int price) {
+	public RestaurantOffers(String id, Restaurant restaurant, Offer offer) {
 		super();
 		this.id = id;
 		this.restaurant = restaurant;
-		this.item = item;
-		this.price = price;
+		this.offer = offer;
 	}
 
 	public String getId() {
@@ -48,21 +45,14 @@ public class Offers {
 		this.restaurant = restaurant;
 	}
 
-	public MenuItem getItem() {
-		return item;
+	public Offer getOffer() {
+		return offer;
 	}
 
-	public void setItem(MenuItem item) {
-		this.item = item;
+	public void setOffer(Offer offer) {
+		this.offer = offer;
 	}
+	
+	
 
-	public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-    
-    
 }

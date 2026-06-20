@@ -1,8 +1,11 @@
 package main.mapper;
 
+import org.springframework.stereotype.Component;
+
 import main.dto.UserDTO;
 import main.model.User;
 
+@Component
 public class UserMapper {
 
 	public UserMapper() {

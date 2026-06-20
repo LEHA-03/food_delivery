@@ -15,7 +15,7 @@ public class Contains {
     private Order order;
 
     @To
-    private Offers item;
+    private Offer offer;
 
     private int quantity;
 	
@@ -24,11 +24,11 @@ public class Contains {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Contains(String id, Order order, Offers item, int quantity) {
+	public Contains(String id, Order order, Offer offer, int quantity) {
 		super();
 		this.id = id;
 		this.order = order;
-		this.item = item;
+		this.offer = offer;
 		this.quantity = quantity;
 	}
 
@@ -48,12 +48,12 @@ public class Contains {
 		this.order = order;
 	}
 
-	public Offers getItem() {
-		return item;
+	public Offer getItem() {
+		return offer;
 	}
 
-	public void setItem(Offers item) {
-		this.item = item;
+	public void setItem(Offer offer) {
+		this.offer = offer;
 	}
 
 	public int getQuantity() {
